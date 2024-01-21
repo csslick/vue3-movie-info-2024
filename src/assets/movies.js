@@ -3,7 +3,6 @@ const data = [
     title: "노량",
     year: 2023,
     category: "액션, 드라마",
-    textRed: "color: red",
     like: 0,
     imgUrl: './assets/3일의휴가.jpg'
   },
