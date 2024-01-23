@@ -1,5 +1,5 @@
 <template>
-  <div class="modal" v-if="isModal">
+  <div class="modal">
     <div class="inner">
       <h3>{{ data[selectedMovie].title }}</h3>
       <p>영화 상세정보</p>
@@ -10,7 +10,7 @@
   
 <script>
 export default {
-  name: "ModalComponent"
+  name: "ModalComponent",
 }
 
 </script>
