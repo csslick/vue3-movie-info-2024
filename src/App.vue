@@ -18,7 +18,12 @@
       </p>
     </div>
   </div>
-  <!-- <Modal /> -->
+  <Modal 
+    :data="data" 
+    :isModal="isModal" 
+    :selectedMovie="selectedMovie"
+    @closeModal="isModal=false"
+  />
 
 </template>
 
@@ -26,7 +31,7 @@
 import data from './assets/movies'; // 영화 데이터
 import Navbar from './components/Navbar.vue';
 import Event from './components/Event.vue'; // 이벤트 박스
-// import Modal from './components/Modal.vue';
+import Modal from './components/Modal.vue';
 console.log(data);
 
 export default {
@@ -47,7 +52,7 @@ export default {
   components: {
     Navbar: Navbar,
     Event: Event,
-    // Modal: Modal,
+    Modal: Modal,
   }
 }
 </script>
