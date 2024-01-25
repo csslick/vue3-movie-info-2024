@@ -3,6 +3,7 @@
     <input 
       type="search" 
       @change="
+        $emit('searchMovie', $event.target.value);
         inputText = $event.target.value;
         $event.target.value = ''
       "
