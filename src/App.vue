@@ -1,7 +1,10 @@
 <template>
   <Navbar />
   <Event :text="text"/>
-  <SearchBar :data="data_temp" @searchMovie="searchMovie($event)"/>
+  <SearchBar 
+    :data="data_temp" 
+    @searchMovie="searchMovie($event)"
+  />
   <p>
     <button @click="showAllMovie" class="btn-all">전체보기</button>
   </p>
